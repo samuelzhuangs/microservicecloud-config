@@ -7,8 +7,6 @@ spring:
    profiles: dev
    application: 
        name: microservicecloud-config-zs-dev
-server: 
-  port: 3353
 ---
 spring: 
    profiles: test
