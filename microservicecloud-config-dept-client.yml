@@ -26,7 +26,7 @@ spring:
       
 mybatis: 
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.zs.entities
+  type-aliases-package: com.zs.entity
   mapper-locations: 
   - classpath:mybatis/mapper/**/*.xml
   
@@ -69,7 +69,7 @@ spring:
       
 mybatis: 
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.zs.entities
+  type-aliases-package: com.zs.entity
   mapper-locations: 
   - classpath:mybatis/mapper/**/*.xml
   
