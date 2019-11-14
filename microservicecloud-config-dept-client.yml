@@ -7,7 +7,6 @@ spring:
 ---
 server: 
   port: 8001
-  
 spring: 
   profile: dev
   application: 
@@ -22,14 +21,12 @@ spring:
       min-idle: 5
       initial-size: 5
       max-total: 5
-      max-wait-millis: 200
-      
+      max-wait-millis: 200     
 mybatis: 
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.zs.entity
   mapper-locations: 
   - classpath:mybatis/mapper/**/*.xml
-  
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
@@ -38,18 +35,14 @@ eureka:
   instance: 
     instance-id: dept-8001.com #自定义服务名称信息
   prefer-ip-address: true  #访问路径可以显示IP地址
-  
-
 info:
   app.name: microservicecloud-dept8001
   company.name: www.zs.com
   build.artifactId: $project.artifactId$
   build.version: $project.modelVersion$
-
 ---
 server: 
-  port: 8001
-  
+  port: 8001 
 spring: 
   profile: test
   application: 
@@ -64,14 +57,12 @@ spring:
       min-idle: 5
       initial-size: 5
       max-total: 5
-      max-wait-millis: 200
-      
+      max-wait-millis: 200     
 mybatis: 
   config-location: classpath:mybatis/mybatis.cfg.xml
   type-aliases-package: com.zs.entity
   mapper-locations: 
   - classpath:mybatis/mapper/**/*.xml
-  
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
@@ -80,8 +71,6 @@ eureka:
   instance: 
     instance-id: dept-8001.com #自定义服务名称信息
   prefer-ip-address: true  #访问路径可以显示IP地址
-  
-
 info:
   app.name: microservicecloud-dept8001
   company.name: www.zs.com
