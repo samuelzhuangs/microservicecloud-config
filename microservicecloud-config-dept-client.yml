@@ -7,7 +7,7 @@ spring:
 server: 
   port: 8001
 spring: 
-  profile: dev
+  profiles: dev
   application: 
     name: microservicecloud-config-dept-client
   datasource: 
@@ -43,7 +43,7 @@ info:
 server: 
   port: 8001 
 spring: 
-  profile: test
+  profiles: test
   application: 
     name: microservicecloud-config-dept-client
   datasource: 
@@ -75,8 +75,6 @@ info:
   company.name: www.zs.com
   build.artifactId: $project.artifactId$
   build.version: $project.modelVersion$
----
-
 
 
 
